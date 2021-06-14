@@ -1,0 +1,115 @@
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  min-height: 100%;
+  padding: 2rem;
+}
+h1 {
+  font-size: 2rem;
+  line-height: 2rem;
+  margin: 0 0 1em;
+}
+main {
+  overflow: hidden;
+  position: relative;
+}
+p.error {
+  clear: both;
+  color: #f00;
+  padding: 0.25rem;
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+form, .addresses {
+  float: left;
+  width: 60%;
+}
+.events {
+  float: right;
+  width: 40%;
+}
+.addresses pre {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5em;
+}
+.addresses .selected > pre {
+  outline: 1px dashed #333;
+}
+
+.modal {
+  position: fixed;
+  left:0;
+  top:0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-title {
+  color:rgb(29, 28, 28);
+  text-align: center;
+  font-size: 24px;
+  padding: 0px;
+  margin: 10px
+}
+
+.modal-content {
+  width: 800px;
+  background-color:rgb(198, 199, 211) ;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.24);
+}
+
+.modal-header {
+  padding-top: 5px
+}
+
+.modal-footer {
+  padding: 10px;
+}
+
+.modal-body {
+  padding: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.466);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.466);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: clip;
+}
+
+.diff-table {
+  border-collapse: collapse;
+  padding: 4px;
+  margin: 15px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.24);
+}
+
+.diff-row {
+  background-color: white;
+  color: black;
+  text-align: left;
+}
+.diff-row.different {
+  color: red;
+  background-color: white;
+}
+
+.cell {
+  padding: 5px;
+  border: 1px solid black
+}
+
+.key-cell{
+  font-weight: bolder;
+}
